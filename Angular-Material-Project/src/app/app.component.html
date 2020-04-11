@@ -1,1 +1,44 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span>First Row</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Second Row</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item>Settings</button>
+  <button mat-menu-item>Help</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+  <mat-icon>more_vert</mat-icon>
+</button>
 <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+
+<mat-card tabindex="0" style="width: 50%; margin: 5%;">
+  <mat-card-title>Title</mat-card-title>
+  <mat-card-subtitle>Subtitle</mat-card-subtitle>
+  <mat-card-content>Content goes in here</mat-card-content>
+  <img mat-card-image alt="logo" src="../assets/random%20logo.png" style="width: 20%;">
+  <mat-card-actions><button>Button</button></mat-card-actions>
+  <mat-card-footer>Footer</mat-card-footer>
+</mat-card>
+
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      This is the expansion title
+    </mat-panel-title>
+    <mat-panel-description>
+      This is a summary of the content
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <p>This is the primary content of the panel.</p>
+
+</mat-expansion-panel>
